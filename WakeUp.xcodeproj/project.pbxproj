@@ -13,7 +13,8 @@
 		2F4CA71A1D3FB2C3000C645F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4CA7191D3FB2C3000C645F /* Assets.xcassets */; };
 		2F4CA71D1D3FB2C3000C645F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4CA71B1D3FB2C3000C645F /* LaunchScreen.storyboard */; };
 		2FCCBAAC1D50CB9E00F8C15F /* DateTimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCCBAA91D50CB9E00F8C15F /* DateTimeUtil.m */; };
-		2FCCBAB31D50CBFE00F8C15F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCCBAB01D50CBFE00F8C15F /* ViewController.m */; };
+		2FCCBAB31D50CBFE00F8C15F /* SetAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCCBAB01D50CBFE00F8C15F /* SetAlarmViewController.m */; };
+		2FE1C1401D6C744400EF9E92 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1C13F1D6C744400EF9E92 /* HomeViewController.m */; };
 		AD98C2E1B52417DF08B1614E /* libPods-WakeUp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD16742DA7E224BDE60E7240 /* libPods-WakeUp.a */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +29,10 @@
 		2F4CA71E1D3FB2C3000C645F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FCCBAA81D50CB9E00F8C15F /* DateTimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeUtil.h; sourceTree = "<group>"; };
 		2FCCBAA91D50CB9E00F8C15F /* DateTimeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimeUtil.m; sourceTree = "<group>"; };
-		2FCCBAAF1D50CBFE00F8C15F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2FCCBAB01D50CBFE00F8C15F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2FCCBAAF1D50CBFE00F8C15F /* SetAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetAlarmViewController.h; sourceTree = "<group>"; };
+		2FCCBAB01D50CBFE00F8C15F /* SetAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController.m; sourceTree = "<group>"; };
+		2FE1C13E1D6C744400EF9E92 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		2FE1C13F1D6C744400EF9E92 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		62F1A2A9D111ED9473294D61 /* Pods-WakeUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakeUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WakeUp/Pods-WakeUp.debug.xcconfig"; sourceTree = "<group>"; };
 		97819C5A9218F16C60681F1F /* Pods-WakeUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakeUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WakeUp/Pods-WakeUp.release.xcconfig"; sourceTree = "<group>"; };
 		BD16742DA7E224BDE60E7240 /* libPods-WakeUp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WakeUp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,8 +130,10 @@
 		2FCCBAAE1D50CBFE00F8C15F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2FCCBAAF1D50CBFE00F8C15F /* ViewController.h */,
-				2FCCBAB01D50CBFE00F8C15F /* ViewController.m */,
+				2FCCBAAF1D50CBFE00F8C15F /* SetAlarmViewController.h */,
+				2FCCBAB01D50CBFE00F8C15F /* SetAlarmViewController.m */,
+				2FE1C13E1D6C744400EF9E92 /* HomeViewController.h */,
+				2FE1C13F1D6C744400EF9E92 /* HomeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -279,7 +284,8 @@
 			files = (
 				2FCCBAAC1D50CB9E00F8C15F /* DateTimeUtil.m in Sources */,
 				2F4CA7121D3FB2C3000C645F /* AppDelegate.m in Sources */,
-				2FCCBAB31D50CBFE00F8C15F /* ViewController.m in Sources */,
+				2FCCBAB31D50CBFE00F8C15F /* SetAlarmViewController.m in Sources */,
+				2FE1C1401D6C744400EF9E92 /* HomeViewController.m in Sources */,
 				2F4CA70F1D3FB2C3000C645F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

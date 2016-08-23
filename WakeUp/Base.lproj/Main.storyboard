@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1909" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="njp-4v-xmJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="njp-4v-xmJ">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Set Alarm-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SetAlarmViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" showsSelectionIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Sp-jh-0sH">
-                                <rect key="frame" x="0.0" y="120" width="600" height="330"/>
+                                <rect key="frame" x="0.0" y="107" width="600" height="295"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="9Sp-Eg-IFg"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="V6Q-KY-cuh"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="sau-MW-Vqr"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hfM-62-U7p"/>
                                 </connections>
                             </pickerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gae-4n-mvq">
-                                <rect key="frame" x="240" y="540" width="120" height="40"/>
+                                <rect key="frame" x="240" y="476" width="120" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUg-0g-oEl">
                                         <rect key="frame" x="5" y="5" width="110" height="30"/>
@@ -57,43 +57,89 @@
                         </subviews>
                         <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gae-4n-mvq" secondAttribute="bottom" constant="20" id="6Ki-QA-6FE"/>
                             <constraint firstItem="7Sp-jh-0sH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="120/600" id="GPc-Nn-3Bb"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gae-4n-mvq" secondAttribute="bottom" constant="20" id="PC9-r8-8mD"/>
                             <constraint firstAttribute="trailing" secondItem="7Sp-jh-0sH" secondAttribute="trailing" id="RUW-5H-RPm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7Sp-jh-0sH" secondAttribute="bottom" multiplier="600/450" id="VFc-my-SAE"/>
                             <constraint firstItem="gae-4n-mvq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rH8-d9-zBV"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7Sp-jh-0sH" secondAttribute="bottom" multiplier="600/450" id="ysT-7J-TnD"/>
                             <constraint firstItem="7Sp-jh-0sH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zbG-nk-ZZm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Set Alarm" id="IhE-gj-5Lf">
-                        <barButtonItem key="rightBarButtonItem" image="Settings" id="yIn-Un-wx3">
-                            <color key="tintColor" red="0.074509803920000006" green="0.58039215690000001" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Set Alarm" id="IhE-gj-5Lf"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
-                        <outlet property="timePicker" destination="7Sp-jh-0sH" id="INV-sY-nmr"/>
+                        <outlet property="timePicker" destination="7Sp-jh-0sH" id="cEv-5J-gpm"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="ETQ-UW-oXu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="280" y="399"/>
+            <point key="canvasLocation" x="754" y="399"/>
+        </scene>
+        <!--Wake Up!-->
+        <scene sceneID="iSZ-uR-iOi">
+            <objects>
+                <viewController id="OWG-Wv-1UE" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j3B-KK-3fX"/>
+                        <viewControllerLayoutGuide type="bottom" id="3LM-Sm-TjX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0jU-Mh-oXJ">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urq-RQ-2wq">
+                                <rect key="frame" x="150" y="121" width="300" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="LZt-YH-GMc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="urq-RQ-2wq" firstAttribute="centerY" secondItem="0jU-Mh-oXJ" secondAttribute="centerY" constant="-100" id="Gsu-pU-xwX"/>
+                            <constraint firstItem="urq-RQ-2wq" firstAttribute="width" secondItem="0jU-Mh-oXJ" secondAttribute="width" multiplier="1:2" id="WvF-xe-DGQ"/>
+                            <constraint firstItem="urq-RQ-2wq" firstAttribute="centerX" secondItem="0jU-Mh-oXJ" secondAttribute="centerX" id="g97-0D-sSU"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Wake Up!" id="YxS-3w-lmm">
+                        <barButtonItem key="rightBarButtonItem" image="Settings" id="WBi-Vy-0WM">
+                            <color key="tintColor" red="0.074509803920000006" green="0.58039215690000001" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="timeLabel" destination="urq-RQ-2wq" id="hCd-bE-nAH"/>
+                        <outlet property="view" destination="0jU-Mh-oXJ" id="O1u-M6-5hS"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="setAlarmSegue" id="puZ-Sl-H4L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CZD-J2-ZVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89" y="399"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zfv-HS-hyn">
             <objects>
                 <navigationController id="njp-4v-xmJ" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="qMK-Qc-rEf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QEc-zd-S8e"/>
+                        <segue destination="OWG-Wv-1UE" kind="relationship" relationship="rootViewController" id="dhb-yd-LDb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WmE-JC-p4J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-410" y="399"/>
+            <point key="canvasLocation" x="-558" y="399"/>
         </scene>
     </scenes>
     <resources>
