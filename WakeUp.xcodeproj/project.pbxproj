@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F4CA70F1D3FB2C3000C645F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4CA70E1D3FB2C3000C645F /* main.m */; };
+		2F4CA7121D3FB2C3000C645F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4CA7111D3FB2C3000C645F /* AppDelegate.m */; };
+		2F4CA7181D3FB2C3000C645F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4CA7161D3FB2C3000C645F /* Main.storyboard */; };
+		2F4CA71A1D3FB2C3000C645F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4CA7191D3FB2C3000C645F /* Assets.xcassets */; };
+		2F4CA71D1D3FB2C3000C645F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4CA71B1D3FB2C3000C645F /* LaunchScreen.storyboard */; };
+		2F4CA7271D3FB627000C645F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2F4CA7261D3FB627000C645F /* .gitignore */; };
+		2FCCBAAC1D50CB9E00F8C15F /* DateTimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCCBAA91D50CB9E00F8C15F /* DateTimeUtil.m */; };
+		2FCCBAB31D50CBFE00F8C15F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCCBAB01D50CBFE00F8C15F /* ViewController.m */; };
+		AD98C2E1B52417DF08B1614E /* libPods-WakeUp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD16742DA7E224BDE60E7240 /* libPods-WakeUp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F4CA70A1D3FB2C3000C645F /* WakeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F4CA70E1D3FB2C3000C645F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F4CA7101D3FB2C3000C645F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F4CA7111D3FB2C3000C645F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F4CA7171D3FB2C3000C645F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F4CA7191D3FB2C3000C645F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F4CA71C1D3FB2C3000C645F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F4CA71E1D3FB2C3000C645F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F4CA7261D3FB627000C645F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		2FCCBAA81D50CB9E00F8C15F /* DateTimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeUtil.h; sourceTree = "<group>"; };
+		2FCCBAA91D50CB9E00F8C15F /* DateTimeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimeUtil.m; sourceTree = "<group>"; };
+		2FCCBAAF1D50CBFE00F8C15F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2FCCBAB01D50CBFE00F8C15F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		62F1A2A9D111ED9473294D61 /* Pods-WakeUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakeUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WakeUp/Pods-WakeUp.debug.xcconfig"; sourceTree = "<group>"; };
+		97819C5A9218F16C60681F1F /* Pods-WakeUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakeUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WakeUp/Pods-WakeUp.release.xcconfig"; sourceTree = "<group>"; };
+		BD16742DA7E224BDE60E7240 /* libPods-WakeUp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WakeUp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F4CA7071D3FB2C3000C645F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD98C2E1B52417DF08B1614E /* libPods-WakeUp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0192221ECED53443199D4A19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD16742DA7E224BDE60E7240 /* libPods-WakeUp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F4CA7011D3FB2C3000C645F = {
+			isa = PBXGroup;
+			children = (
+				2F4CA70C1D3FB2C3000C645F /* WakeUp */,
+				2F4CA70B1D3FB2C3000C645F /* Products */,
+				AEE6206F35996734210E8E2D /* Pods */,
+				0192221ECED53443199D4A19 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2F4CA70B1D3FB2C3000C645F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F4CA70A1D3FB2C3000C645F /* WakeUp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F4CA70C1D3FB2C3000C645F /* WakeUp */ = {
+			isa = PBXGroup;
+			children = (
+				2FCCBAAD1D50CBFE00F8C15F /* MVC */,
+				2FCCBAA51D50CB9E00F8C15F /* Misc */,
+				2FCCBAA71D50CB9E00F8C15F /* Utilities */,
+				2F4CA7261D3FB627000C645F /* .gitignore */,
+				2F4CA7101D3FB2C3000C645F /* AppDelegate.h */,
+				2F4CA7111D3FB2C3000C645F /* AppDelegate.m */,
+				2F4CA7161D3FB2C3000C645F /* Main.storyboard */,
+				2F4CA7191D3FB2C3000C645F /* Assets.xcassets */,
+				2F4CA71B1D3FB2C3000C645F /* LaunchScreen.storyboard */,
+				2F4CA71E1D3FB2C3000C645F /* Info.plist */,
+				2F4CA70D1D3FB2C3000C645F /* Supporting Files */,
+			);
+			path = WakeUp;
+			sourceTree = "<group>";
+		};
+		2F4CA70D1D3FB2C3000C645F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F4CA70E1D3FB2C3000C645F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FCCBAA51D50CB9E00F8C15F /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		2FCCBAA71D50CB9E00F8C15F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2FCCBAA81D50CB9E00F8C15F /* DateTimeUtil.h */,
+				2FCCBAA91D50CB9E00F8C15F /* DateTimeUtil.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2FCCBAAD1D50CBFE00F8C15F /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				2FCCBAAE1D50CBFE00F8C15F /* Controller */,
+				2FCCBAB11D50CBFE00F8C15F /* Model */,
+				2FCCBAB21D50CBFE00F8C15F /* View */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		2FCCBAAE1D50CBFE00F8C15F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2FCCBAAF1D50CBFE00F8C15F /* ViewController.h */,
+				2FCCBAB01D50CBFE00F8C15F /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2FCCBAB11D50CBFE00F8C15F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FCCBAB21D50CBFE00F8C15F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AEE6206F35996734210E8E2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62F1A2A9D111ED9473294D61 /* Pods-WakeUp.debug.xcconfig */,
+				97819C5A9218F16C60681F1F /* Pods-WakeUp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F4CA7091D3FB2C3000C645F /* WakeUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F4CA7211D3FB2C3000C645F /* Build configuration list for PBXNativeTarget "WakeUp" */;
+			buildPhases = (
+				2C58FDE94E8862A0C6B40864 /* [CP] Check Pods Manifest.lock */,
+				2F4CA7061D3FB2C3000C645F /* Sources */,
+				2F4CA7071D3FB2C3000C645F /* Frameworks */,
+				2F4CA7081D3FB2C3000C645F /* Resources */,
+				28AF6CD2E0104ADC65457E94 /* [CP] Embed Pods Frameworks */,
+				CFCE87B1EAAA29C49B963D21 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WakeUp;
+			productName = WakeUp;
+			productReference = 2F4CA70A1D3FB2C3000C645F /* WakeUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F4CA7021D3FB2C3000C645F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Optimus Information Inc.";
+				TargetAttributes = {
+					2F4CA7091D3FB2C3000C645F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 2F4CA7051D3FB2C3000C645F /* Build configuration list for PBXProject "WakeUp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F4CA7011D3FB2C3000C645F;
+			productRefGroup = 2F4CA70B1D3FB2C3000C645F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F4CA7091D3FB2C3000C645F /* WakeUp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F4CA7081D3FB2C3000C645F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F4CA7271D3FB627000C645F /* .gitignore in Resources */,
+				2F4CA71D1D3FB2C3000C645F /* LaunchScreen.storyboard in Resources */,
+				2F4CA71A1D3FB2C3000C645F /* Assets.xcassets in Resources */,
+				2F4CA7181D3FB2C3000C645F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28AF6CD2E0104ADC65457E94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WakeUp/Pods-WakeUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C58FDE94E8862A0C6B40864 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CFCE87B1EAAA29C49B963D21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WakeUp/Pods-WakeUp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F4CA7061D3FB2C3000C645F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FCCBAAC1D50CB9E00F8C15F /* DateTimeUtil.m in Sources */,
+				2F4CA7121D3FB2C3000C645F /* AppDelegate.m in Sources */,
+				2FCCBAB31D50CBFE00F8C15F /* ViewController.m in Sources */,
+				2F4CA70F1D3FB2C3000C645F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2F4CA7161D3FB2C3000C645F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F4CA7171D3FB2C3000C645F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F4CA71B1D3FB2C3000C645F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F4CA71C1D3FB2C3000C645F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F4CA71F1D3FB2C3000C645F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = NO;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "";
+			};
+			name = Debug;
+		};
+		2F4CA7201D3FB2C3000C645F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = NO;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WARNING_CFLAGS = "";
+			};
+			name = Release;
+		};
+		2F4CA7221D3FB2C3000C645F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62F1A2A9D111ED9473294D61 /* Pods-WakeUp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WakeUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.optimus.WakeUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F4CA7231D3FB2C3000C645F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97819C5A9218F16C60681F1F /* Pods-WakeUp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WakeUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.optimus.WakeUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F4CA7051D3FB2C3000C645F /* Build configuration list for PBXProject "WakeUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F4CA71F1D3FB2C3000C645F /* Debug */,
+				2F4CA7201D3FB2C3000C645F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F4CA7211D3FB2C3000C645F /* Build configuration list for PBXNativeTarget "WakeUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F4CA7221D3FB2C3000C645F /* Debug */,
+				2F4CA7231D3FB2C3000C645F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F4CA7021D3FB2C3000C645F /* Project object */;
+}

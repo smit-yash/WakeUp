@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1909" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="njp-4v-xmJ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Set Alarm-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" showsSelectionIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Sp-jh-0sH">
+                                <rect key="frame" x="0.0" y="120" width="600" height="330"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="9Sp-Eg-IFg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="V6Q-KY-cuh"/>
+                                </connections>
+                            </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gae-4n-mvq">
+                                <rect key="frame" x="240" y="540" width="120" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUg-0g-oEl">
+                                        <rect key="frame" x="5" y="5" width="110" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <state key="normal" title="Set Alarm">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.039215686270000001" blue="0.2358249133993007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ayM-Un-QEl"/>
+                                    <constraint firstAttribute="width" constant="120" id="hL6-zN-ZPy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Sp-jh-0sH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="120/600" id="GPc-Nn-3Bb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gae-4n-mvq" secondAttribute="bottom" constant="20" id="PC9-r8-8mD"/>
+                            <constraint firstAttribute="trailing" secondItem="7Sp-jh-0sH" secondAttribute="trailing" id="RUW-5H-RPm"/>
+                            <constraint firstItem="gae-4n-mvq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rH8-d9-zBV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7Sp-jh-0sH" secondAttribute="bottom" multiplier="600/450" id="ysT-7J-TnD"/>
+                            <constraint firstItem="7Sp-jh-0sH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zbG-nk-ZZm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Set Alarm" id="IhE-gj-5Lf">
+                        <barButtonItem key="rightBarButtonItem" image="Settings" id="yIn-Un-wx3">
+                            <color key="tintColor" red="0.074509803920000006" green="0.58039215690000001" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="timePicker" destination="7Sp-jh-0sH" id="INV-sY-nmr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="399"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zfv-HS-hyn">
+            <objects>
+                <navigationController id="njp-4v-xmJ" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="qMK-Qc-rEf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QEc-zd-S8e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WmE-JC-p4J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-410" y="399"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Settings" width="25" height="25"/>
+    </resources>
+</document>
