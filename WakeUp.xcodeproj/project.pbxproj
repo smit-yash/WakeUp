@@ -15,6 +15,7 @@
 		2FCCBAAC1D50CB9E00F8C15F /* DateTimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCCBAA91D50CB9E00F8C15F /* DateTimeUtil.m */; };
 		2FCCBAB31D50CBFE00F8C15F /* SetAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCCBAB01D50CBFE00F8C15F /* SetAlarmViewController.m */; };
 		2FE1C1401D6C744400EF9E92 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1C13F1D6C744400EF9E92 /* HomeViewController.m */; };
+		2FE1C1431D6C85ED00EF9E92 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1C1421D6C85ED00EF9E92 /* SettingsViewController.m */; };
 		AD98C2E1B52417DF08B1614E /* libPods-WakeUp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD16742DA7E224BDE60E7240 /* libPods-WakeUp.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		2FCCBAB01D50CBFE00F8C15F /* SetAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController.m; sourceTree = "<group>"; };
 		2FE1C13E1D6C744400EF9E92 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		2FE1C13F1D6C744400EF9E92 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		2FE1C1411D6C85ED00EF9E92 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		2FE1C1421D6C85ED00EF9E92 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		62F1A2A9D111ED9473294D61 /* Pods-WakeUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakeUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WakeUp/Pods-WakeUp.debug.xcconfig"; sourceTree = "<group>"; };
 		97819C5A9218F16C60681F1F /* Pods-WakeUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakeUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WakeUp/Pods-WakeUp.release.xcconfig"; sourceTree = "<group>"; };
 		BD16742DA7E224BDE60E7240 /* libPods-WakeUp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WakeUp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,10 +133,12 @@
 		2FCCBAAE1D50CBFE00F8C15F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2FCCBAAF1D50CBFE00F8C15F /* SetAlarmViewController.h */,
-				2FCCBAB01D50CBFE00F8C15F /* SetAlarmViewController.m */,
 				2FE1C13E1D6C744400EF9E92 /* HomeViewController.h */,
 				2FE1C13F1D6C744400EF9E92 /* HomeViewController.m */,
+				2FCCBAAF1D50CBFE00F8C15F /* SetAlarmViewController.h */,
+				2FCCBAB01D50CBFE00F8C15F /* SetAlarmViewController.m */,
+				2FE1C1411D6C85ED00EF9E92 /* SettingsViewController.h */,
+				2FE1C1421D6C85ED00EF9E92 /* SettingsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				2FCCBAAC1D50CB9E00F8C15F /* DateTimeUtil.m in Sources */,
 				2F4CA7121D3FB2C3000C645F /* AppDelegate.m in Sources */,
 				2FCCBAB31D50CBFE00F8C15F /* SetAlarmViewController.m in Sources */,
+				2FE1C1431D6C85ED00EF9E92 /* SettingsViewController.m in Sources */,
 				2FE1C1401D6C744400EF9E92 /* HomeViewController.m in Sources */,
 				2F4CA70F1D3FB2C3000C645F /* main.m in Sources */,
 			);

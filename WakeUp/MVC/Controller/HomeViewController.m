@@ -6,19 +6,39 @@
 
 @implementation HomeViewController {
 
-  __weak IBOutlet UILabel *timeLabel;
+    __weak IBOutlet UILabel *timeLabel;
 }
+
+#pragma mark - Utility
 
 - (void)viewDidLoad {
-  [super viewDidLoad];
-  // Do any additional setup after loading the view.
+    [super viewDidLoad];
 
-  [self performSegueWithIdentifier:@"setAlarmSegue" sender:self];
+    [self refreshTime];
 }
 
-- (void)didReceiveMemoryWarning {
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
+- (void)refreshTime {
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+      NSDate *now = [NSDate date];
+      NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
+      [outputFormatter setDateFormat:@"hh:mm:ss a"];
+      NSString *newDateString = [outputFormatter stringFromDate:now];
+      timeLabel.text = newDateString;
+    });
+
+    // refresh every 1 second
+    [self performSelector:@selector(refreshTime) withObject:nil afterDelay:1];
+}
+
+#pragma mark - Button Actions
+
+- (void)setAlarmButtonAction {
+    [self performSegueWithIdentifier:@"setAlarmSegue" sender:self];
+}
+
+- (IBAction)settingsButtonAction:(id)sender {
+    [self performSegueWithIdentifier:@"settingsSegue" sender:self];
 }
 
 /*

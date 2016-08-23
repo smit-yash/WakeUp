@@ -77,6 +77,25 @@
             </objects>
             <point key="canvasLocation" x="754" y="399"/>
         </scene>
+        <!--Alarm Settings-->
+        <scene sceneID="pxb-WA-NxN">
+            <objects>
+                <viewController id="gsw-Z2-oBu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ll0-Wo-oc1"/>
+                        <viewControllerLayoutGuide type="bottom" id="UPh-iF-kWA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s7i-P1-WPA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Alarm Settings" id="oEt-fj-YIR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0h2-Eh-SIS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="754" y="-291"/>
+        </scene>
         <!--Wake Up!-->
         <scene sceneID="iSZ-uR-iOi">
             <objects>
@@ -109,14 +128,19 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Wake Up!" id="YxS-3w-lmm">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="bJx-Jk-k6e"/>
                         <barButtonItem key="rightBarButtonItem" image="Settings" id="WBi-Vy-0WM">
                             <color key="tintColor" red="0.074509803920000006" green="0.58039215690000001" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="settingsButtonAction:" destination="OWG-Wv-1UE" id="42l-Y4-jEP"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="timeLabel" destination="urq-RQ-2wq" id="hCd-bE-nAH"/>
                         <outlet property="view" destination="0jU-Mh-oXJ" id="O1u-M6-5hS"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="setAlarmSegue" id="puZ-Sl-H4L"/>
+                        <segue destination="gsw-Z2-oBu" kind="show" identifier="settingsSegue" id="qaG-CO-oGp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CZD-J2-ZVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
