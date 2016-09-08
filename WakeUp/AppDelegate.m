@@ -1,12 +1,5 @@
-//
-//  AppDelegate.m
-//  WakeUp
-//
-//  Created by Optimus-66 on 7/20/16.
-//  Copyright © 2016 Optimus Information Inc. All rights reserved.
-//
-
 #import "AppDelegate.h"
+#import "BackgroundUtil.h"
 
 @interface AppDelegate ()
 
@@ -16,9 +9,8 @@
 
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  // Override point for customization after application launch.
-  return YES;
-  // some stuff
+    // Override point for customization after application launch.
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -28,6 +20,10 @@
   // and it begins the transition to the background state.
   // Use this method to pause ongoing tasks, disable timers, and throttle down
   // OpenGL ES frame rates. Games should use this method to pause the game.
+}
+
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {

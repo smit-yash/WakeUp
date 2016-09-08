@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1DBE771D6DB34E006519BB /* BackgroundUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1DBE761D6DB34E006519BB /* BackgroundUtil.m */; };
 		2F4CA70F1D3FB2C3000C645F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4CA70E1D3FB2C3000C645F /* main.m */; };
 		2F4CA7121D3FB2C3000C645F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4CA7111D3FB2C3000C645F /* AppDelegate.m */; };
 		2F4CA7181D3FB2C3000C645F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4CA7161D3FB2C3000C645F /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F1DBE751D6DB34E006519BB /* BackgroundUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundUtil.h; sourceTree = "<group>"; };
+		2F1DBE761D6DB34E006519BB /* BackgroundUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundUtil.m; sourceTree = "<group>"; };
 		2F4CA70A1D3FB2C3000C645F /* WakeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F4CA70E1D3FB2C3000C645F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2F4CA7101D3FB2C3000C645F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 		2FCCBAA71D50CB9E00F8C15F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2F1DBE751D6DB34E006519BB /* BackgroundUtil.h */,
+				2F1DBE761D6DB34E006519BB /* BackgroundUtil.m */,
 				2FCCBAA81D50CB9E00F8C15F /* DateTimeUtil.h */,
 				2FCCBAA91D50CB9E00F8C15F /* DateTimeUtil.m */,
 			);
@@ -289,6 +294,7 @@
 			files = (
 				2FCCBAAC1D50CB9E00F8C15F /* DateTimeUtil.m in Sources */,
 				2F4CA7121D3FB2C3000C645F /* AppDelegate.m in Sources */,
+				2F1DBE771D6DB34E006519BB /* BackgroundUtil.m in Sources */,
 				2FCCBAB31D50CBFE00F8C15F /* SetAlarmViewController.m in Sources */,
 				2FE1C1431D6C85ED00EF9E92 /* SettingsViewController.m in Sources */,
 				2FE1C1401D6C744400EF9E92 /* HomeViewController.m in Sources */,
